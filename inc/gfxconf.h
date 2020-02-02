@@ -39,32 +39,48 @@
 #define GFX_OS_NO_INIT TRUE
 
 /* GFX sub-systems to turn on */
-#define GFX_USE_GDISP TRUE
-#define GFX_USE_GWIN FALSE
-#define GFX_USE_GEVENT FALSE
-#define GFX_USE_GINPUT FALSE
-#define GFX_USE_GTIMER FALSE
+#define GFX_USE_GDISP			TRUE
+#define GFX_USE_GWIN			FALSE
+#define GFX_USE_GEVENT			FALSE
+#define GFX_USE_GINPUT			FALSE
+#define GFX_USE_GTIMER			FALSE
+#define GFX_USE_GFILE			TRUE // Support filesystems
 
 /* Features for the GDISP sub-system. */
-#define GDISP_NEED_STARTUP_LOGO FALSE
-#define GDISP_NEED_VALIDATION FALSE
-#define GDISP_NEED_CLIP TRUE
-#define GDISP_NEED_TEXT TRUE
-#define GDISP_NEED_MULTITHREAD TRUE
-#define GDISP_NEED_CIRCLE TRUE
-#define GDISP_NEED_CONTROL TRUE
+#define GDISP_NEED_STARTUP_LOGO		FALSE
+#define GDISP_NEED_VALIDATION		FALSE
+#define GDISP_NEED_CLIP				TRUE
+/* the following defines enable several drawing functions */
+#define GDISP_NEED_TEXT				TRUE
+#define GDISP_NEED_MULTITHREAD		TRUE
+#define GDISP_NEED_CIRCLE			TRUE
+#define GDISP_NEED_CONTROL 			TRUE
+#define GDISP_NEED_CONVEX_POLYGON 	TRUE
+#define GDISP_NEED_ARC				TRUE
+#define GDISP_NEED_IMAGE			TRUE
+#define GDISP_NEED_IMAGE_BMP		TRUE
+#define GDISP_NEED_IMAGE_GIF		TRUE
+#define GDISP_NEED_PIXMAP			TRUE // for drawing into buffer
 
-/* Builtin Fonts */
-#define GDISP_INCLUDE_FONT_UI1 TRUE
-#define GDISP_INCLUDE_FONT_UI2 TRUE
+/* Enable Fonts */
+#define GDISP_INCLUDE_FONT_UI1			   FALSE
+#define GDISP_INCLUDE_FONT_UI2			   FALSE
+#define GDISP_INCLUDE_FONT_DEJAVUSANS24_AA TRUE
+#define GDISP_INCLUDE_FONT_DEJAVUSANS16_AA TRUE
+#define GDISP_INCLUDE_FONT_DEJAVUSANS12_AA TRUE
+#define GDISP_INCLUDE_USER_FONTS	       TRUE // custom fonts
 
-#define GDISP_DEFAULT_ORIENTATION GDISP_ROTATE_270
+#define GDISP_DEFAULT_ORIENTATION 		GDISP_ROTATE_270
 
 /* Features for the GWIN sub-system. */
-#define GWIN_NEED_CONSOLE TRUE
+#define GWIN_NEED_CONSOLE		TRUE
 
 /* Features for the GINPUT sub-system. */
-#define GINPUT_NEED_MOUSE TRUE
+#define GINPUT_NEED_MOUSE		TRUE
+
+/* Features for the GFILE sub-system. */
+#define GFILE_NEED_ROMFS		TRUE
+#define GFILE_MAX_GFILES		20
 
 /* Empty defines */
 #define vTraceSetMutexName(a, b)

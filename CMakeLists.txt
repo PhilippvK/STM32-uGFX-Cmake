@@ -79,7 +79,7 @@ SET(CMAKE_C_FLAGS "-mcpu=cortex-m4 -march=armv7e-m -mtune=cortex-m4 -mlittle-end
 FIND_PACKAGE(FreeRTOS)
 FIND_PACKAGE(STM32STD COMPONENTS dma dma2d fmc i2c ltdc gpio rcc spi usart adc tim exti syscfg REQUIRED)
 FIND_PACKAGE(STM32Discovery COMPONENTS ioe lcd sdram REQUIRED)
-FIND_PACKAGE(uGFX COMPONENTS gdisp_mcufont gdriver gdisp gos REQUIRED)
+FIND_PACKAGE(uGFX COMPONENTS gdisp_mcufont gdriver gdisp gos gdisp_image gfile REQUIRED)
 
 INCLUDE_DIRECTORIES(
     ${CMAKE_CURRENT_SOURCE_DIR}
