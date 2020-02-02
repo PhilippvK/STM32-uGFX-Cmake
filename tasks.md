@@ -24,6 +24,12 @@ in this directory.
 - [ ] Generate project files for Eclipse, VSCode,...
 - [x] 100% Ubuntu support @alxhoff
 - [ ] 100% MacOS support @philippvk @wip
+- [ ] C++ support (Discuss with @alxhoff)
+- [ ] Incremental builds?
+- [ ] Program before debug required?
+- [ ] `build/` directory or at least `libs/` for Downloads
+- [ ] Fix `make clean`
+- [ ] Support: `SET(FREERTOS_HEAP_IMPL 4)` (See https://github.com/ObKo/stm32-cmake/blob/master/README.md)
 
 # Demo Project
 
@@ -39,17 +45,22 @@ in this directory.
 - [ ] Provide Instructions for using Images/Fonts
 - [ ] Add to manual how install `st-flash`,... (for MacOS, WSL/MinGW)
 - [ ] Links to useful ressources (API, Wiki, UGFX examples,...)
+- [ ] Upload Example Debug Configurarion for Eclipse
 
-# Exercises
+# Lecture/Exercises
 
 - [ ] Edit incomprehensible task description
 - [ ] Create "Sample Solution"
+- [ ] Chapter about debugging / OpenOCD / GDB
+- [ ] Git Tutorial: target CMake version
 
 # Hardware/Lab related
 
 - [ ] @due(2020-03-31) Buy new USB cables for UART (Multiplayer) @wip
 - [ ] @due(2020-02-14) Lock cupboard with key @philippvk
 - [ ] Allow programming individual board with 2 USB cables (See https://www.bergzand.net/programming-with-multiple-st-link-programmers.html)
+- [ ] Experiment with sound
+- [ ] Test using cmake version on lab PCs
 
 # TEST
 
