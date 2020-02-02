@@ -108,6 +108,8 @@ ADD_EXECUTABLE(
     system_stm32f4xx.c
     )
 
+target_link_libraries(${CMAKE_PROJECT_NAME}.elf m) # Math library required for sqrt(),...
+
 ADD_CUSTOM_TARGET(
     flash
     COMMAND ${CMAKE_OBJCOPY} -Obinary ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.bin # TODO
