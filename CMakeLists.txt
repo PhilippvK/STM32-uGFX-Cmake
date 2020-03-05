@@ -114,9 +114,6 @@ ADD_EXECUTABLE(
     system_stm32f4xx.c
     )
 
-
-message("BLA: ${PROJECT_ELF_FILE}")
-
 target_link_libraries(${PROJECT_ELF_FILE} m) # Math library required for sqrt(),...
 
 ADD_CUSTOM_TARGET(
