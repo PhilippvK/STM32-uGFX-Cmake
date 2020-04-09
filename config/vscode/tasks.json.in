@@ -23,7 +23,11 @@
             "label": "BuildFlash",
             "type": "shell",
             "command": "make flash",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "Debug",
