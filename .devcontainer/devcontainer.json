@@ -5,7 +5,7 @@
 		"ms-vscode.cpptools",
 		"marus25.cortex-debug",
 		"xaver.clang-format"
-	]
+	],
 	//"remoteUser": "vscode",
-	//"postCreateCommand": "git submodule update --recursive --init"
+	"postCreateCommand": "mkdir build/ && cd build/ && cmake -DUSE_IDE=vscode .."
 }
